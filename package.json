@@ -1,0 +1,47 @@
+{
+  "name": "mirador-workspace-components-plugin",
+  "version": "0.0.5",
+  "description": "mirador-workspace-components-plugin React component",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "css",
+    "es",
+    "lib",
+    "umd"
+  ],
+  "scripts": {
+    "build": "nwb build-react-component",
+    "clean": "nwb clean-module && nwb clean-demo",
+    "prepublishOnly": "npm run build",
+    "start": "nwb serve-react-demo",
+    "test": "nwb test-react",
+    "test:coverage": "nwb test-react --coverage",
+    "test:watch": "nwb test-react --server"
+  },
+  "peerDependencies": {
+    "@material-ui/core": "^4.9.13",
+    "mirador": "^3.0.0-rc.7",
+    "prop-types": "^15.7.2",
+    "react": "^16.8"
+  },
+  "devDependencies": {
+    "@material-ui/core": "^4.9.13",
+    "@mui/icons-material": "^5.4.2",
+    "@mui/material": "^5.4.2",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.3.0",
+    "nwb": "0.25.x",
+    "mirador": "^3.0.0-rc.7",
+    "prop-types": "^15.7.2",
+    "react": "^16.8",
+    "react-dom": "^16.8"
+  },
+  "author": "",
+  "homepage": "",
+  "license": "Apache-2.0",
+  "repository": "",
+  "keywords": [
+    "react-component"
+  ]
+}
